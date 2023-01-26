@@ -43,7 +43,7 @@ const DATA = {
         },
         {
             "name": "Babak Amin Azad",
-            "img": "img/blank_profile_pic.png",
+            "img": "img/babak.jpg",
             "url": "https://www.silverf0x00.com/"
         },
         {
