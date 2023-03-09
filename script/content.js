@@ -60,12 +60,12 @@ const DATA = {
     ],
     LINKS: [
         {
-            "title": "Paper (Available Soon)",
+            "title": "Paper",
             "icon": "img/paper.svg",
             "links": [
                 {
                     "name": "PDF",
-                    "url": "#",
+                    "url": "paper/www23-scan-me.pdf",
                     "icon": "img/paper_copy.svg"
                 },
             ],
