@@ -71,12 +71,17 @@ const DATA = {
             ],
         },
         {
-            "title": "Dataset (Available Soon)",
+            "title": "Dataset (~860MB)",
             "icon": "img/code.svg",
             "links": [
                 {
-                    "name": "Dataset",
-                    "url": "#",
+                    "name": "Dataset (WP)",
+                    "url": "paper/test-f-n-full-2.json",
+                    "icon": "img/GitHub-Mark-Light-32px.png"
+                },
+                {
+                    "name": "Dataset (JML)",
+                    "url": "paper/test-f-jml-n-full-2.json",
                     "icon": "img/GitHub-Mark-Light-32px.png"
                 },
                 // {
