@@ -7,19 +7,19 @@ const DATA = {
     },
     HEAD: {
         FAVICON_SRC: "img/logo_dummy.png",
-        PROJECT_TITLE: "Scan Me If You Can: Understanding and Detecting Unwanted Vulnerability Scanning",
+        PROJECT_TITLE: "Like, Comment, Get Scammed: Characterizing Comment Scams on Media Platforms",
         PROJECT_SUBTITLE: {
-            "name": "Proceedings of the Web Conference (WWW), 2023",
-            "url": "https://www2023.thewebconf.org/",
+            "name": "Network and Distributed Systems Security (NDSS) Symposium 2024",
+            "url": "https://www.ndss-symposium.org/ndss2024/",
         },
         AUTHOR_NAME: "Xigao Li",
         VIDEO_SRC: "video/dummy_video.mp4",
     },
     ABSTRACT: {
         TEXT: [
-            "Web vulnerability scanners (WVS) are an indispensable tool for penetration testers and developers of web applications, allowing them to identify and fix low-hanging vulnerabilities before they are discovered by attackers. Unfortunately, malicious actors leverage the very same tools to identify and exploit vulnerabilities in third-party websites. Existing research in the WVS space is largely concerned with how many vulnerabilities these tools can discover, as opposed to trying to identify the tools themselves when they are used illicitly.",
-            "In this work, we design a testbed to characterize web vulnerability scanners using browser-based and network-based fingerprinting techniques. We conduct a measurement study over 12 web vulnerability scanners as well as 159 users who were recruited to interact with the same web applications that were targeted by the evaluated WVSs. By contrasting the traffic and behavior of these two groups, we discover tool-specific and type-specific behaviors in WVSs that are absent from regular users.",
-            "Based on these observations, we design and build ScannerScope, a machine-learning-based, web vulnerability scanner detection system. ScannerScope consists of a transparent reverse proxy that injects fingerprinting modules on the fly without the assistance (or knowledge) of the protected web applications. Our evaluation results show that ScannerScope can effectively detect WVSs and protect web applications against unwanted vulnerability scanning, with a detection accuracy of over 99% combined with near-zero false positives on human-visitor traffic. Finally, we show that the asynchronous design of ScannerScope results in a negligible impact on server performance and demonstrate that its classifier can resist adversarial ML attacks launched by sophisticated adversaries."
+            "Given the meteoric rise of large media platforms (such as YouTube) on the web, it is no surprise that attackers seek to abuse them in order to easily reach hundreds of millions of users. Among other social-engineering attacks perpetrated on these platforms, comment scams have increased in popularity despite the presence of mechanisms that purportedly give content creators control over their channel comments. In a comment scam, attackers set up script-controlled accounts that automatically post or reply to comments on media platforms, enticing users to contact them. Through the promise of free prizes and investment opportunities, attackers aim to steal financial assets from the end users that contact them.",
+            "In this paper, we present the first systematic, large-scale study of comment scams. We design and implement an infrastructure to collect a dataset of 8.8 million comments from 20 different YouTube channels over a 6-month period. We develop filters based on textual, graphical, and temporal features of comments and identify 206K scam comments from 10K unique accounts. Using this dataset, we present our analysis of scam campaigns, comment dynamics, and evasion techniques used by scammers.",
+            "Lastly, through an IRB-approved study, we interact with 50 scammers to gain insights into their social-engineering tactics and payment preferences. Using transaction records on public blockchains, we perform a quantitative analysis of the financial assets stolen by scammers finding that just the scammers that were part of our user study have stolen funds equivalent to millions of dollars. Our study demonstrates that existing scam-detection mechanisms are insufficient for curbing abuse, pointing to the need for better comment-moderation tools as well as other changes that would make it difficult for attackers to obtain tens of thousands of accounts on these large platforms."
 ],
         // OVERVIEW: {
         //     "src": "img/overview_dummy.png",
@@ -43,11 +43,6 @@ const DATA = {
             "url": "https://xigaoli.com"
         },
         {
-            "name": "Babak Amin Azad",
-            "img": "img/babak.jpg",
-            "url": "https://www.silverf0x00.com/"
-        },
-        {
             "name": "Amir Rahmati",
             "img": "img/amir.jpg",
             "url": "https://amir.rahmati.com"
@@ -64,24 +59,19 @@ const DATA = {
             "icon": "img/paper.svg",
             "links": [
                 {
-                    "name": "PDF",
-                    "url": "paper/www23-scan-me.pdf",
+                    "name": "PDF (Available Soon)",
+                    "url": "#",
                     "icon": "img/paper_copy.svg"
                 },
             ],
         },
         {
-            "title": "Dataset (~860MB)",
+            "title": "Code",
             "icon": "img/code.svg",
             "links": [
                 {
-                    "name": "Dataset (WP)",
-                    "url": "paper/test-f-n-full-2.json",
-                    "icon": "img/GitHub-Mark-Light-32px.png"
-                },
-                {
-                    "name": "Dataset (JML)",
-                    "url": "paper/test-f-jml-n-full-2.json",
+                    "name": "Available Soon",
+                    "url": "#",
                     "icon": "img/GitHub-Mark-Light-32px.png"
                 },
                 // {
@@ -94,11 +84,12 @@ const DATA = {
         
     ],
     CITATION: ` \
-        @article{xigao2023scanme,
-            title     = {Scan Me If You Can: Understanding and Detecting Unwanted Vulnerability Scanning},
-            author    = {Li, Xigao and Amin Azad, Babak and Rahmati, Amir and Nikiforakis, Nick},
-            booktitle = {Proceedings of the Web Conference (WWW)},
-            year      = {2023}
+        @article{xigao2024comment,
+            title     = {Like, Comment, Get Scammed: Characterizing Comment Scams on Media
+                Platforms},
+            author    = {Li, Xigao and Rahmati, Amir and Nikiforakis, Nick},
+            booktitle = {Network and Distributed Systems Security (NDSS) Symposium},
+            year      = {2024}
         }
     `,
     FOOTER: {
